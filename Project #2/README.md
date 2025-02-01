@@ -1,4 +1,4 @@
-# 🖧 🖧 Socket Programming Project #2
+# 🖧 Socket Programming Project #2
 
 ## 📌 프로젝트 개요
 이 프로젝트는 **컴퓨터 네트워크 소켓 프로그래밍** 실습을 위한 코드 구현입니다.  
