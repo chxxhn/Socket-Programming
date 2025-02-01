@@ -7,7 +7,18 @@
 ---
 
 ## 📂 프로젝트 구조
-
+```
+/Socket-Programming
+│── project #1
+│ ├── af_unix_server.c # AF_UNIX 도메인 소켓 서버
+│ ├── af_unix_client.c # AF_UNIX 도메인 소켓 클라이언트
+│ ├── af_inet_server.c # AF_INET 도메인 소켓 서버
+│ ├── af_inet_client.c # AF_INET 도메인 소켓 클라이언트
+│ ├── multi_service_server.c # 멀티서비스 (Concurrent) 서버
+│ ├── multi_service_client.c # 멀티서비스 클라이언트
+│ ├── Makefile # 컴파일을 위한 Makefile
+│ ├── README.md # 프로젝트 설명 파일
+```
 
 ---
 
