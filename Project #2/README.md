@@ -34,7 +34,7 @@ void handler(int signum) {
 }
 ```
 
-### **2️⃣ 멀티클라이언트 Echo 서버**
+### **2️⃣ Concurrent server: Echo 서버**
 - `fork()`를 이용하여 **클라이언트별로 별도의 프로세스를 생성**
 - 클라이언트가 메시지를 보내면 **서버가 동일한 메시지를 반환**
 - `client_cnt` 변수를 이용하여 접속된 클라이언트 수 출력
@@ -43,7 +43,7 @@ void handler(int signum) {
 printf("Number of service client : %d\n", client_cnt);
 ```
 
-### **3️⃣ select 기반 다중 채팅 서버**
+### **3️⃣ select 기반 MultiChat 서버**
 - `select()` 함수를 이용하여 **여러 클라이언트의 요청을 비동기 처리**
 - `FD_SET()` 및 `FD_ISSET()`을 활용하여 **소켓 이벤트 감지**
 - **3명의 클라이언트가 동시에 접속 후 메시지를 주고받는 구조**
@@ -59,14 +59,14 @@ Sleep begins!
 Handler is called.
 ```
 
-### **2️⃣ 멀티클라이언트 Echo 서버**
+### **2️⃣ Concurrent server: Echo 서버**
 ```bash
 Client: Hello Server!
 Server: Recv from Server: Hello Server!
 Client: \quit
 ```
 
-### **3️⃣ 다중 채팅 서버**
+### **3️⃣ select 기반 MultiChat 서버**
 ```bash
 Client 1: 안녕하세요
 Client 2: 반갑습니다!
